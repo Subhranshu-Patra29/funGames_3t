@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon-32x32.png">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Tic Tac Toe</title>
+</head>
+
+<body>
+    <button class="minimize-btn" id="minibut" onclick="toggleSidebar()"><ion-icon
+            name="grid-outline"></ion-icon></button>
+    <div class="sidebar" id="sidebar">
+        <div class="logo">
+            <img src="logo.jpeg" alt="Logo" width="100">
+        </div>
+        <a href="#" class="active">Tic-Tac-Toe</a>
+        <a href="https://subhranshu-patra29.github.io/funGames_2048/">2048</a>
+        <a href="chess.html">Chess</a>
+        <a href="sudoku.html">Sudoku</a>
+    </div>
+
+    <div class="container">
+        <span style="font-size: 65px;">Tic..Tac..Toe..</span>
+    </div>
+    <div class="grid" id="grid"></div>
+    <div id="result">Game Ongoing</div>
+    <div id="reset" onclick="reset()">Reset Board</div>
+</body>
+
+</html>
